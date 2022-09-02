@@ -12,8 +12,8 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 exec(open('src/open_clip/version.py').read())
 setup(
-    name='open_clip_torch',
-    version=__version__,
+    name='open_clip_torch_any_py3',
+    version="1.3.0",
     description='OpenCLIP',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -29,6 +29,7 @@ setup(
         'Intended Audience :: Education',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: Apache Software License',
+        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
@@ -52,5 +53,4 @@ setup(
         'regex',
         'tqdm',
     ],
-    python_requires='>=3.7',
 )
